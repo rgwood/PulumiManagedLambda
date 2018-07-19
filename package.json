@@ -1,0 +1,20 @@
+{
+    "name": "PulumiManagedLambda",
+    "main": "bin/pulumi-deploy.js",
+    "typings": "bin/pulumi-deploy.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "build-deploy": "tsc && pulumi update"
+    },
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.7",
+        "@types/node": "latest",
+        "aws-sdk": "^2.277.1",
+        "typescript": "^2.7.2"
+    },
+    "dependencies": {
+        "@pulumi/pulumi": "latest",
+        "@pulumi/aws": "latest",
+        "@pulumi/aws-serverless": "latest"
+    }
+}
